@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    build: .
+    command: /bin/bash
+    environment:
+      EDITOR: "emacs"
+    ports:
+      - "8080:80"
+    tty: true
